@@ -1,7 +1,6 @@
 *.log
 .DS_Store
 node_modules
-dist
 examples/prisma/zod
 test/functional/*/actual
 test/functional/*/prisma/.client

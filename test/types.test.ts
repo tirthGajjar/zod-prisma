@@ -13,6 +13,8 @@ describe('types Package', () => {
 			kind: 'scalar',
 			name: 'nameList',
 			type: 'String',
+			isReadOnly: false,
+			isUpdatedAt: false,
 			documentation: ['@zod.max(64)', '@zod.min(1)'].join('\n'),
 		}
 
@@ -32,6 +34,8 @@ describe('types Package', () => {
 			kind: 'scalar',
 			name: 'aField',
 			type: 'SomeUnknownType',
+			isReadOnly: false,
+			isUpdatedAt: false,
 		}
 
 		const constructor = getZodConstructor(field)
